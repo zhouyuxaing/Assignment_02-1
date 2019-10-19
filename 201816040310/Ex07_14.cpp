@@ -4,17 +4,23 @@
 
 using namespace std;
 
-bool check(const vector<int> &vec, int x); // 检查是否重复
+bool isExist(const vector<int> &vec, int x); // 检查是否重复
 
 int main()
 {
     vector<int> vec;
     int x;
-    
+
     for (int i = 0; i < 20; i++)
     {
+
         cin >> x;
-        if (check(vec, x))
+        if (x < 10 || x > 100)
+        {
+            i--;
+            continue;
+        }
+        if (isExist(vec, x))
             vec.push_back(x);
     }
 
@@ -24,7 +30,7 @@ int main()
     return 0;
 }
 
-bool check(const vector<int> &vec, int x)
+bool isExist(const vector<int> &vec, int x)
 {
     for (int item : vec)
     {
