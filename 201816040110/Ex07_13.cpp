@@ -4,8 +4,8 @@ using namespace std;
 
 int main()
 {
-    int array[5], a, i,z=0,j,b=0;
-    for(i=0; i<5; i++)
+    int array[20], a, i,z=0,j,b=0;
+    for(i=0; i<20; i++)
     {
         cin >>  a;
         if(a>=10&&a<=100)
