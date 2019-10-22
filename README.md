@@ -1,5 +1,6 @@
 ### Assignment_02_20191018
 #### The second OOP assignment on Oct 18, 2019
+#### Deadline is 12:00PM Oct 25, 2019
 
 ---------------------------------------
 #### Requirements
