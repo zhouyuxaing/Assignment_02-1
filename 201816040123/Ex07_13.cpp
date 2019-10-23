@@ -34,5 +34,4 @@ int main()
         cout <<n[i]<<" ";
     }
     cout << endl;
-    return 0;
 }
