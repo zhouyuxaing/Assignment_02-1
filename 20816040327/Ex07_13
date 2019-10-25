@@ -34,7 +34,7 @@ int main()
     for(int FinNum:InputNum)            
     {
         if(FinNum>=10&&FinNum<=100)
-        cout << your numbers are: << endl;
+        cout << "your numbers are:" << endl;
        cout << FinNum << endl;
     }//输出
 
