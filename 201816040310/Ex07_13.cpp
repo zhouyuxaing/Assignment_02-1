@@ -16,10 +16,7 @@ int main()
         cin >> x;
 
         if (x < 10 || x > 100)
-        {
-            i--;
             continue;
-        }
         if (isExist(arr, x))
         {
             arr[cur++] = x; // 如果没有重复,那么添加进array

@@ -16,10 +16,7 @@ int main()
 
         cin >> x;
         if (x < 10 || x > 100)
-        {
-            i--;
             continue;
-        }
         if (isExist(vec, x))
             vec.push_back(x);
     }
