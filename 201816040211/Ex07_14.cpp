@@ -5,39 +5,35 @@ using namespace std;
 
 int main()
 {
-    vector<int> items(20);
-    int i,j,h=1;
+    vector<int> items(1);
+    int i,j,h,m=1;
     for(i=0;i<20;i++)
     {
-        cin>>items[i];
-    }  //把数据存到items中
-    for(i=0;i<20;i++)
-    {
-
-        if(items[i]>=10 && items[i]<=100) //判断数据是否符合10到100的区间
+        cin>>h; //输入数据
+        if(h>=10 && h<=100) //判别数据是否合适
         {
             if(i>0)
             {
                 for(j=0;j<i;j++)
                 {
-
-                   if (items[i]==items[j])
-                   {
-                       h=0;
-
-                   }
-                } //查重  判断数据是否一样
-                if (h == 1)
-                {cout<<items[i]<<" ";}
-                else if (h == 0) h=1;  //跳过相同的数据
+                    if(h==items[j]) //检查数据是否和之前的相同
+                    {
+                      m=0;
+                    }
+                }
+                if(m==1)
+                {
+                    items.push_back(h); //把新数据存到items里面
+                }
+                else { m=1;}
             }
-            else
-            cout<<items[i]<<" ";  //判断是否是第一个数据
+            else items[i]=h; // 存第一个数据
         }
-        else if(items[i]<10 || items[i]>100)
-        {
-            i=(i+i)/2;
-        } //跳过不合适的数据
     }
-    return 0;
+
+    for(int item: items)
+    {
+        cout << item << endl;
+    }//输出items里的数据
 }
+
