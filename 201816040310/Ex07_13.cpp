@@ -25,7 +25,7 @@ int main()
 
     for (int item : arr)
     {
-        if (item) // 遍历array,如果有值就输出
+        if (item) // 遍历array ,如果有值就输出
             cout << setw(3) << item;
     }
     cout << endl;
