@@ -36,7 +36,8 @@ int main()
             items[j]=temp;
             j++;
         }
-    }
+    }//The end of the input
+    
     cout << "\nThe different numbers you entered are:" <<endl;
     for(int item:items)//Traverse the output
     {
