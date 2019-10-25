@@ -11,7 +11,7 @@ int main()//去重处理
         int x=0,i,j;
 
     cout<<"请输入20个10到100的整数"<<endl;
-    for(i=0;i<5;i++)//去重操作
+    for(i=0;i<20;i++)//去重操作
     {
         cin >> x;
         f=-1;
@@ -31,7 +31,7 @@ int main()//去重处理
 
     }
 
-    for(i=0;i<5;i++)//输出array对象
+    for(i=0;i<20;i++)//输出array对象
     {
         if(item[i]!=0)
         cout<<item[i]<<endl;
