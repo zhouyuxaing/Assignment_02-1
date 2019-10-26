@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {   int i,t,fla=1;
-    vector< int > duplicate(20);//创建存储int类型数值的vector对象
+    vector< int > duplicate(20);// 创建存储int类型数值的vector对象
     cout<<"请输入20个数（大于等于10小于等于100）"<<endl;
     for(i=0;i<20;i++)
     {

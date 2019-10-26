@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    array< int, 20> duplicate={0};//声明array对象
+    array< int, 20> duplicate={0};// 声明array对象
     int i,x,j;
     cout<<"请输入20个10~100的数字（包含10和100）: "<<endl;
 
