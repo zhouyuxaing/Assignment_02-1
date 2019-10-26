@@ -17,7 +17,7 @@ void add_member(array<int,20> ai)
                 if(number==ai[j])
                 {
                     flag = 1;
-                    i--;
+                    i=i-1;
                 }
             }
             if(flag==0)
